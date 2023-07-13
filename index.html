@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@700&display=swap"
+    rel="stylesheet">
+  <title>Odin | Sign-up Form</title>
+</head>
+<body>
+  <main>
+    <section class="form__container">
+      <div class="form__image"></div>
+      <div class="form__content">
+        <h2 class="form__title">Let's do this!</h2>
+        <form action="">
+          <legend class="first__row">
+            <label for="first_name">first name</label>
+            <input type="text" name="first_name" id="first_name" required>
+            <label for="last_name">last name</label>
+            <input type="text" name="last_name" id="last_name" required>
+          </legend>
+
+          <legend class="second__row">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">phone</label>
+            <input type="tel" name="phone" id="phone" required>
+          </legend>
+
+          <legend class="third__row">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" required>
+            <label for="confirm_password">confirm password</label>
+            <input type="password" name="confirm_password" id="confirm_password" required>
+          </legend>
+          <button>Create Account</button>
+          <p class="form__login">Already have an account? <a href="#">Log in</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
