@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Syne:wght@700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>  
   <title>Odin | Sign-up Form</title>
 </head>
 <body>
@@ -32,10 +33,16 @@
           </legend>
 
           <legend class="third__row">
-            <label for="password">password</label>
-            <input type="password" name="password" id="password" required>
-            <label for="confirm_password">confirm password</label>
-            <input type="password" name="confirm_password" id="confirm_password" required>
+            <div class="password__wrapper">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password" required>
+              <p class="error_msg">* Passwords do not match</p>
+            </div>
+            <confirm-password__wrapper>
+              <label for="confirm_password">confirm password</label>
+              <input type="password" name="confirm_password" id="confirm_password"
+              required>
+            </confirm-password__wrapper>
           </legend>
           <button>Create Account</button>
           <p class="form__login">Already have an account? <a href="#">Log in</a>.</p>

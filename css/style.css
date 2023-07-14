@@ -141,13 +141,27 @@ form input {
 	width: 100%;
 	background: none;
 	padding: 3px 5px;
-	border: 1px solid var(--clr-accent);
+	border: 1px solid var(--clr-neutral);
 	color: var(--clr-neutral);
 	border-radius: 5px;
 }
 
+form input:valid {
+	border: 1px solid var(--clr-accent);
+}
+
 form input:invalid {
 	border: 1px solid var(--clr-error);
+}
+
+.error_msg {
+	margin-top: -1rem;
+	margin-bottom: .8rem;
+	color: var(--clr-error);
+}
+
+#password:valid + .error_msg {
+	display: none;
 }
 
 form button {
@@ -201,7 +215,17 @@ form button:hover {
 		column-gap: 1rem;
 	}
 
-	legend + legend {
+	.third__row {
+		grid-template-rows: 1fr;
+	}
+
+	.error_msg {
+		margin-top: auto;
+		margin-bottom: auto;
+		color: var(--clr-error);
+	}
+
+	legend+legend {
 		margin-top: 1.5rem;
 	}
 
